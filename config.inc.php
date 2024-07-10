@@ -33,7 +33,7 @@ require_once 'Typecho/Common.php';
 Typecho_Common::init();
 
 /** 定义数据库参数 */
-$db = new Typecho_Db('Pdo_Mysql','表前缀');
+$db = new Typecho_Db('Pdo_Mysql','blog_');
 $db->addServer(array (
   'host' =>  $_ENV["PLANETSCALE_DB_HOST"],
   'user' => $_ENV["PLANETSCALE_DB_USERNAME"],
